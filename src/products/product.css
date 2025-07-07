@@ -1,0 +1,159 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.product-container {
+  max-width: 1536px;
+  width: 100%;
+  height: auto;
+  padding: 15px 80px;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 100%;
+  height: auto;
+
+}
+
+.product-title h1 {
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #110D60;
+}
+
+.product-title p {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #1A202C;
+  margin-top: 60px;
+  line-height: 1.6;
+}
+
+.product-number {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding: 30px;
+  box-shadow:
+    5px 5px 15px rgba(0, 123, 255, 0.2),
+    -5px 5px 15px rgba(0, 123, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.product-top {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.product-top h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.product-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* ORIGINAL HOLATDA */
+  align-items: center;
+  flex-wrap: wrap; /* Shart emas, lekin responsivega mos */
+}
+
+.numbers {
+  width: 200px;
+  height: auto;
+  min-height: 150px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers h2 {
+  font-size: 60px;
+  color: #110D60;
+}
+
+.numbers p {
+  font-size: 20px;
+  color: #1A202C;
+  text-align: center;
+}
+
+.numbers img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======= RESPONSIVE ======= */
+
+@media (max-width: 1024px) {
+  .product-bottom {
+    flex-direction: column; /* TAGMA-TAG */
+    justify-content: center; /* EKRAN ORTASIDA */
+    align-items: center;
+  }
+
+  .numbers {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0; /* Oralari kichik */
+  }
+
+  .numbers h2 {
+    font-size: 50px;
+  }
+
+  .numbers p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    padding: 15px 30px;
+  }
+
+  .product-title h1 {
+    font-size: 35px;
+  }
+
+  .product-title p {
+    font-size: 16px;
+  }
+
+  .product-top h1 {
+    font-size: 30px;
+  }
+
+  .numbers h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title h1 {
+    font-size: 28px;
+  }
+
+  .product-title p {
+    font-size: 15px;
+  }
+
+  .product-top h1 {
+    font-size: 25px;
+  }
+
+  .numbers h2 {
+    font-size: 40px;
+  }
+
+  .numbers p {
+    font-size: 16px;
+  }
+}

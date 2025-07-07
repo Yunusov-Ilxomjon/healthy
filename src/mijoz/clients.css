@@ -1,0 +1,97 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.client-container {
+  max-width: 1536px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 80px;
+  box-sizing: border-box;
+}
+
+.client-title {
+  width: 100%;
+  height: auto;
+
+}
+
+.client-title h1 {
+  color: brown;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.client-title h2 {
+  color: #110D60;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.client-title h2:hover {
+  transition: all 2s;
+  cursor: pointer;
+  color: brown;
+}
+
+.client-cards {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.client-cards .swiper {
+  padding-bottom: 40px; /* pagination nuqtalar uchun joy */
+}
+
+.client-cards img {
+  width: 100%;
+  height: auto;
+  max-width: 320px; /* Katta ekranda rasm o‘lchami */
+  display: block;
+  margin: 0 auto; /* Markazda turadi */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .client-container {
+    padding: 60px 40px;
+  }
+
+  .client-title h1,
+  .client-title h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-container {
+    padding: 40px 20px;
+  }
+
+  .client-title h1,
+  .client-title h2 {
+    font-size: 32px;
+  }
+
+  .client-cards img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-title h1,
+  .client-title h2 {
+    font-size: 28px;
+  }
+
+  .client-cards img {
+    max-width: 220px;
+  }
+}

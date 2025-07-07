@@ -1,0 +1,189 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* NAVBAR: STATIK */
+.navbar-container {
+  width: 100%;
+  height: 60px;
+  background-color: #2E3A6B;
+  position: relative; /* Z-index ishlashi uchun */
+  z-index: 10; /* Pastki qatlam */
+}
+
+.navbar-content {
+  max-width: 1536px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Desktopda o‘ngda */
+  padding: 0 100px;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul > li > a > img {
+  width: 20px;
+}
+
+.btn-nav {
+  width: 100px;
+  height: 40px;
+  background-color: #C3242A;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-nav:hover {
+  background-color: #a91e23;
+}
+
+/* RESPONSIVE: 1024px */
+@media screen and (max-width: 1024px) {
+  .navbar-content {
+    justify-content: center; /* Markazga chiqadi */
+    padding: 0 50px; /* Padding kamayadi */
+  }
+}
+
+/* RESPONSIVE: 768px */
+@media screen and (max-width: 768px) {
+  .navbar-content {
+    justify-content: center; /* Markazda qoladi */
+    padding: 0 20px; /* Yana kichikroq */
+  }
+
+  ul {
+    gap: 10px; /* Ikonkalar oraliq kichrayadi */
+  }
+
+  ul li:last-child {
+    display: none; /* Tel raqam yashiriladi */
+  }
+}
+
+/* MODAL BACKDROP */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+  z-index: 999; /* Navbar dan yuqori */
+}
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1000; /* Eng yuqori qatlam */
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  margin-top: 5px;
+}
+
+.modal-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.modal-form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #C3242A;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-form button:hover {
+  background-color: #a91e23;
+}
+
+/* FEEDBACK MESSAGE */
+.feedback-message {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 2000;
+  animation: fadeInOut 3s forwards;
+}
+
+.feedback-message.success {
+  background-color: #28a745; /* yashil */
+}
+
+.feedback-message.error {
+  background-color: #dc3545; /* qizil */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* PASTKI CONTENT ENDILIKDA PADDING-TOP KERAK EMAS! */
+.main-content {
+  padding-top: 0;
+}

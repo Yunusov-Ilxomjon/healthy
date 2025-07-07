@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registr-container{
+    max-width: 1536px;
+    width: 100%;
+    height: 700px;
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.registr-content{
+    width: 80%;
+    height: 550px;
+    /* border: 1px solid black; */
+    display: flex;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.registr-info{
+    width: 55%;
+    height: 100%;
+    background-color: #1E2E3E;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 60px;
+
+
+        h1, p{
+        color: white;
+
+    }
+
+}
+
+
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+ ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+   
+a{
+    text-align: left;
+}
+ }
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1000; /* Eng yuqori qatlam */
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  margin-top: 5px;
+}
+
+.modal-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.modal-form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #C3242A;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-form button:hover {
+  background-color: #a91e23;
+}
+
+/* FEEDBACK MESSAGE */
+.feedback-message {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 2000;
+  animation: fadeInOut 3s forwards;
+}
+
+.feedback-message.success {
+  background-color: #28a745; /* yashil */
+}
+
+.feedback-message.error {
+  background-color: #dc3545; /* qizil */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* PASTKI CONTENT ENDILIKDA PADDING-TOP KERAK EMAS! */
+.main-content {
+  padding-top: 0;
+}
+
+
+.registr-contact{
+    width: 45%;
+    height: 100%;
+    background-color: #8A2BE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+h1{
+    width: 80%;
+    text-align: center;
+}
+}
+
+.registr-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label{
+    margin-top: 25px;
+}
+
+span{
+    color: #dc3545;
+}
+
+input{
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+ textarea{
+    width: 70%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.registr-btn{
+   width: 70%;
+    height: 50px;
+    border: none;
+    background-color: white;
+    color: #8A2BE2;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
