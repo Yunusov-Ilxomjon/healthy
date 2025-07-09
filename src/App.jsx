@@ -23,11 +23,11 @@ function App() {
 
         <div className={`header-links ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li><a className='header-links-a' href="/">Biz haqimizda</a></li>
-            <li><a className='header-links-a' href="/">Mahsulotlar</a></li>
-            <li><a className='header-links-a' href="/">Xizmatlar</a></li>
-            <li><a className='header-links-a' href="/">Aloqa</a></li>
-            <li><a className='header-links-a' href="/">O'rnatish</a></li>
+<li><a className='header-links-a' href="#about">Biz haqimizda</a></li>
+<li><a className='header-links-a' href="#products">Mahsulotlar</a></li>
+<li><a className='header-links-a' href="#services">Xizmatlar</a></li>
+<li><a className='header-links-a' href="#registr">Aloqa</a></li>
+<li><a className='header-links-a' href="#installation">O'rnatish</a></li>
           </ul>
         </div>
 
@@ -48,6 +48,7 @@ function App() {
 
       <div className='section-img'>
         <img src="/sectoin-pic.jpg" alt="section" />
+        
       </div>
     </div>
   );

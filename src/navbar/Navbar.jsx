@@ -51,9 +51,21 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-content">
           <ul>
-            <li><a href=""><img src="/nav-img/instagram.png" alt="instagram" /></a></li>
-            <li><a href=""><img src="/nav-img/telegram.png" alt="telegram" /></a></li>
-            <li><a href=""><img src="/nav-img/facebook.png" alt="facebook" /></a></li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="/nav-img/instagram.png" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+                <img src="/nav-img/telegram.png" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="/nav-img/facebook.png" alt="facebook" />
+              </a>
+            </li>
             <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
           </ul>
           <button className='btn-nav' onClick={() => setIsModalOpen(true)}>Aloqa</button>
@@ -65,7 +77,7 @@ const Navbar = () => {
           <div className="modal-backdrop" onClick={() => setIsModalOpen(false)}></div>
           <div className="modal">
             <form className='modal-form' onSubmit={handleSubmit}>
-              <h1 style={{textAlign: 'center', color: '#2E3A6B', fontSize: '26px', marginBottom: '40px'}}>Bizga qanday savolingiz bor?</h1>
+              <h1 style={{ textAlign: 'center', color: '#2E3A6B', fontSize: '26px', marginBottom: '40px' }}>Bizga qanday savolingiz bor?</h1>
               <label>Ism <span style={{ color: 'red' }}>*</span></label>
               <input
                 type="text"
@@ -92,6 +104,7 @@ const Navbar = () => {
               <button type="submit">Yuborish</button>
             </form>
           </div>
+          
         </>
       )}
 

@@ -10,13 +10,15 @@ body {
   background: #f9f9f9;
 }
 
-/* NAVBAR: STATIK */
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar-container {
   width: 100%;
   height: 60px;
   background-color: #2E3A6B;
   position: relative; /* Z-index ishlashi uchun */
-  z-index: 10; /* Pastki qatlam */
+  z-index: 10; /* Har doim past qatlam */
 }
 
 .navbar-content {
@@ -24,7 +26,8 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Desktopda o‘ngda */
+  justify-content: flex-end;
+  margin: 0 auto;
   padding: 0 100px;
 }
 
@@ -64,31 +67,23 @@ ul > li > a > img {
   background-color: #a91e23;
 }
 
-/* RESPONSIVE: 1024px */
-@media screen and (max-width: 1024px) {
-  .navbar-content {
-    justify-content: center; /* Markazga chiqadi */
-    padding: 0 50px; /* Padding kamayadi */
-  }
+/* ===========================
+   HAMBURGER & LANGUAGE SELECT
+   (Agar mavjud bo‘lsa)
+=========================== */
+.hamburger {
+  position: relative;
+  z-index: 10;
 }
 
-/* RESPONSIVE: 768px */
-@media screen and (max-width: 768px) {
-  .navbar-content {
-    justify-content: center; /* Markazda qoladi */
-    padding: 0 20px; /* Yana kichikroq */
-  }
-
-  ul {
-    gap: 10px; /* Ikonkalar oraliq kichrayadi */
-  }
-
-  ul li:last-child {
-    display: none; /* Tel raqam yashiriladi */
-  }
+.language-select {
+  position: relative;
+  z-index: 10;
 }
 
-/* MODAL BACKDROP */
+/* ===========================
+   MODAL BACKDROP
+=========================== */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -97,20 +92,24 @@ ul > li > a > img {
   height: 100%;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(2px);
-  z-index: 999; /* Navbar dan yuqori */
+  z-index: 999; /* Navbar, hamburger, til select ustidan chiqadi */
 }
 
-/* MODAL WINDOW */
+/* ===========================
+   MODAL WINDOW
+=========================== */
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  z-index: 1000; /* Eng yuqori qatlam */
+  background: #fff;
+  z-index: 1000; /* Backdrop ustidan chiqadi */
   padding: 30px;
   border-radius: 10px;
   width: 450px;
+  max-width: 95%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .modal-form {
@@ -118,44 +117,53 @@ ul > li > a > img {
   flex-direction: column;
 }
 
-label {
+.modal-form h1 {
+  text-align: center;
+  color: #2E3A6B;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.modal-form label {
   margin-top: 10px;
+  font-size: 16px;
 }
 
 .modal-form input,
 .modal-form textarea {
   width: 100%;
-  height: 50px;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
   font-size: 16px;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  border: 1px solid gray;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .modal-form textarea {
   height: 100px;
-  resize: none;
+  resize: vertical;
 }
 
 .modal-form button {
   width: 100%;
   height: 50px;
-  border-radius: 10px;
-  font-size: 16px;
-  background-color: #C3242A;
-  color: white;
+  border-radius: 8px;
+  background: #C3242A;
+  color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 16px;
   transition: background 0.3s;
 }
 
 .modal-form button:hover {
-  background-color: #a91e23;
+  background: #a91e23;
 }
 
-/* FEEDBACK MESSAGE */
+/* ===========================
+   FEEDBACK MESSAGE
+=========================== */
 .feedback-message {
   position: fixed;
   top: 80px;
@@ -169,11 +177,11 @@ label {
 }
 
 .feedback-message.success {
-  background-color: #28a745; /* yashil */
+  background-color: #28a745;
 }
 
 .feedback-message.error {
-  background-color: #dc3545; /* qizil */
+  background-color: #dc3545;
 }
 
 @keyframes fadeInOut {
@@ -183,7 +191,91 @@ label {
   100% { opacity: 0; transform: translateY(-10px); }
 }
 
-/* PASTKI CONTENT ENDILIKDA PADDING-TOP KERAK EMAS! */
-.main-content {
-  padding-top: 0;
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Tablet: 1024px */
+@media screen and (max-width: 1024px) {
+  .navbar-content {
+    justify-content: center;
+    padding: 0 50px;
+  }
+}
+
+/* Mobil: 768px */
+@media screen and (max-width: 768px) {
+  .navbar-content {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  ul li:last-child {
+    display: none; /* Tel raqam yashiriladi */
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-form h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .modal-form label {
+    font-size: 15px;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .modal-form textarea {
+    height: 80px;
+  }
+
+  .modal-form button {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Kichik telefon: 480px */
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-form h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .modal-form label {
+    font-size: 14px;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .modal-form textarea {
+    height: 70px;
+  }
+
+  .modal-form button {
+    height: 40px;
+    font-size: 13px;
+  }
 }

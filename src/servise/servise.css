@@ -9,7 +9,7 @@
   max-width: 1536px;
   width: 100%;
   margin: 0 auto;
-  height: auto; /* balandlik moslashsin */
+  height: auto; /* Balanslashadi */
   background-color: #F7F7F7;
   padding: 40px 80px;
 }
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* moslashuvchan */
+  flex-wrap: wrap; /* Kerak */
   margin-bottom: 50px;
 }
 
@@ -28,8 +28,8 @@
 .servise-info-2 h1 {
   color: #C3242A;
   width: 60%;
-  font-size: 30px;
   line-height: 1.3;
+  font-size: 50px;
 }
 
 .servise-info-1 h1 span,
@@ -42,6 +42,7 @@
   max-width: 300px;
   width: 100%;
   height: auto;
+  flex-shrink: 0;
 }
 
 /* RESPONSIVE: 1024px */
@@ -52,27 +53,110 @@
 
   .servise-info-1,
   .servise-info-2 {
-    flex-direction: column; /* ustma-ust */
+    flex-direction: column; /* Ustma-ust */
+    align-items: center;
     text-align: center;
   }
 
   .servise-info-1 h1,
   .servise-info-2 h1 {
     width: 100%;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
   .servise-info-1 img,
   .servise-info-2 img {
     max-width: 250px;
+    margin-bottom: 20px; /* Pasga joy ajratib beradi */
   }
 }
 
 /* RESPONSIVE: 768px */
+/* --- 1024px dan kichik barcha ekranlarda --- */
+@media screen and (max-width: 1024px) {
+  .servise-container {
+    padding: 40px 40px;
+  }
+
+  .servise-info-1,
+  .servise-info-2 {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* elementlar orasiga masofa */
+  }
+
+  .servise-info-1 h1,
+  .servise-info-2 h1 {
+    width: 100%;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .servise-info-1 img,
+  .servise-info-2 img {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Oraliq breakpoint: 900px va 864px --- */
+@media screen and (max-width: 900px) {
+  .servise-info-1,
+  .servise-info-2 {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .servise-info-1 h1,
+  .servise-info-2 h1 {
+    font-size: 28px;
+  }
+
+  .servise-info-1 img,
+  .servise-info-2 img {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .servise-info-1,
+  .servise-info-2 {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .servise-info-1 h1,
+  .servise-info-2 h1 {
+    font-size: 26px;
+  }
+
+  .servise-info-1 img,
+  .servise-info-2 img {
+    max-width: 220px;
+  }
+}
+
+/* --- 768px dan kichiklar uchun --- */
 @media screen and (max-width: 768px) {
   .servise-container {
     padding: 30px 20px;
+  }
+
+  .servise-info-1,
+  .servise-info-2 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+
   }
 
   .servise-info-1 h1,
@@ -86,19 +170,77 @@
   }
 }
 
-/* RESPONSIVE: 480px */
 @media screen and (max-width: 480px) {
   .servise-container {
     padding: 20px 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .servise-info-1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+     }
+
+      .servise-info-2 {
+
+ padding: 0;
+     }
+
+
+  .servise-info-1 h1 {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 15px;
   }
 
-  .servise-info-1 h1,
-  .servise-info-2 h1 {
-    font-size: 20px;
+    .servise-info-2 h1 {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .servise-info-1 img {
+    max-width: 160px;
   }
 
-  .servise-info-1 img,
-  .servise-info-2 img {
-    max-width: 180px;
+   .servise-info-2 img {
+    max-width: 160px;
   }
+  .registr-container {
+    padding: 20px 15px;
+  }
+  .registr-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .registr-info h1 {
+    font-size: 24px;
+  }
+  .registr-info,
+  .registr-contact {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  input,
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+img{
+  transform:  scale(0.8);
 }
+
+h1{
+  font-size: 16px;
+}
+}
+

@@ -7,6 +7,7 @@ import Product from './products/Product';
 import Clients from './mijoz/Clients'
 import Servise from './servise/Servise';
 import Registr from './registr/Registr'
+import Footer from './footer/Footer';
 
 
 
@@ -21,6 +22,7 @@ root.render(
     <Clients/>
     <Servise/>
     <Registr/>
+    <Footer/>
   </React.StrictMode>
 );
 
