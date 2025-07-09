@@ -110,7 +110,7 @@ body {
 }
 
 .header-links {
-  z-index: 1003;
+  /* z-index: 1003; */
 }
 
 /* ============ RESPONSIVE ============ */
