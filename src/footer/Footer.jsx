@@ -25,7 +25,7 @@ const Footer = () => {
                     <h3>Monday - Friday: 9:00 - 18:00</h3>
 
                     <h2>Biz ijtimoiy tarmoqlardamiz</h2>
-                    <ul>
+                    <ul style={{marginTop: '20px'}}>
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                 <img src="/nav-img/instagram.png" alt="instagram" />
