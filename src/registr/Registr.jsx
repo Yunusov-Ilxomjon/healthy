@@ -6,9 +6,9 @@ const Registr = () => {
 
 
     return (
-        <div className='registr-container'>
+        <div id="registr" className='registr-container'>
             <div className="registr-content">
-                <div className="registr-info">
+                <div data-aos="fade-left" className="registr-info">
                     <h1 style={{ textAlign: 'center' }} >Контактная информация</h1>
                     <p style={{ textAlign: 'center', marginTop: '10px', fontSize: '18px' }}>
                         Вы можете получить больше информации
@@ -50,7 +50,7 @@ const Registr = () => {
 
 
 
-                <div className="registr-contact">
+                <div data-aos="fade-right" className="registr-contact">
                       <h1  style={{marginTop: '20px', }}>Bizga qanday savolingiz bor?</h1>
                     <form className='registr-form' action="">
                       

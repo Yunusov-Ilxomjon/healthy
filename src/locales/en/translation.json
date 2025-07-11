@@ -1,0 +1,79 @@
+{
+  "about": {
+    "title": "ASSI Tech",
+    "paragraph1": "Our ASSITECHBIO company specializes in selling and servicing ultrasound equipment and organizing ultrasound courses.",
+    "paragraph2": "We offer a wide range of manufacturers and price categories: from compact portable ultrasound machines for mobile services to high-precision stationary devices for medical institutions.",
+    "paragraph3": "We work with reliable suppliers and guarantee product quality, and we also provide warranty and post-warranty service for ultrasound devices.",
+    "paragraph4": "Our specialists have extensive experience in medical equipment and are always ready to help with selecting and installing the necessary equipment.",
+    "paragraph5": "Our goal is to provide clients with the best ultrasound machines to optimize their work and help improve the efficiency of patient diagnosis and treatment.",
+    "paragraph6": "We strive for long-term relationships with our clients, offering them only the best equipment and services."
+  },
+
+  
+  "nav": {
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "installation": "Installation",
+        "contactButton": "Contact",
+    "modalTitle": "What question do you have for us?",
+    "labelName": "Name",
+    "placeholderName": "Enter your name",
+    "labelPhone": "Phone number",
+    "placeholderPhone": "Enter your phone number",
+    "labelMessage": "Your message",
+    "placeholderMessage": "Your message",
+    "submitButton": "Submit",
+    "successMessage": "✅ Your information has been successfully sent!",
+    "errorMessage": "❌ Please fill out all fields!"
+  },
+
+    "footer": {
+    "contactTitle": "Contact",
+    "companyAddressTitle": "Company address / Main office:",
+    "companyAddress": "Tashkent, Olmazor Yunusobod, block 11 52B",
+    "phoneTitle": "Phone",
+    "mailTitle": "Email:",
+    "workingHoursTitle": "Working hours:",
+    "workingHours": "Monday - Friday: 9:00 - 18:00",
+    "socialTitle": "We are on social media",
+    "mapTitle": "Our location",
+    "copyright": "© 2024 ASSI Tech. All rights reserved."
+  },
+
+    "clients": {
+    "title": "We support",
+    "subtitle": "the client at all stages"
+  },
+    "product": {
+    "title": "COURSES WE OFFER",
+    "course1": "NEUROSONOGRAPHY",
+    "course2": "ADULT ECHOCARDIOGRAPHY",
+    "course3": "PEDIATRIC ECHOCARDIOGRAPHY",
+    "course4": "OBSTETRICS AND GYNECOLOGY",
+    "course5": "FETAL ECHOCARDIOGRAPHY",
+    "numbersTitle": "OUR NUMBERS",
+    "brands": "BRANDS",
+    "dealers": "DEALERS",
+    "employees": "EMPLOYEES",
+    "clients": "CLIENTS"
+  },
+    "registr": {
+    "contactInfo": "Contact Information",
+    "description": "You can get more information using these contact details",
+    "address": "Massiv 11 52B, Yunusobod district, Tashkent, Uzbekistan",
+    "email1": "sales@assitech.uz",
+    "email2": "ceo@assitech.uz",
+    "email3": "sevinch@assitech.uz",
+    "phone": "+998 99 815 98 85"
+  },
+    "servise": {
+    "deliver": "We deliver",
+    "directly_from_manufacturer": "medical equipment directly from the manufacturer",
+    "solve": "We solve",
+    "complex_equipment_tasks": "complex medical equipment and service tasks"
+  }
+
+
+}

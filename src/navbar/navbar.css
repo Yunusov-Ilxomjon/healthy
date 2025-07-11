@@ -50,6 +50,16 @@ ul > li > a > img {
   width: 20px;
 }
 
+
+ul li a svg {
+  transition: color 0.3s;
+}
+
+ul li a:hover svg {
+  color: #FFD700; /* Masalan, oltin rang */
+}
+
+
 .btn-nav {
   width: 100px;
   height: 40px;
@@ -138,6 +148,7 @@ ul > li > a > img {
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 15px;
+  color: #333; /* <-- Matn rangi qo‘shildi */
 }
 
 .modal-form textarea {
@@ -160,6 +171,7 @@ ul > li > a > img {
 .modal-form button:hover {
   background: #a91e23;
 }
+
 
 /* ===========================
    FEEDBACK MESSAGE

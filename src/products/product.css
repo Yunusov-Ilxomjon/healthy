@@ -16,7 +16,6 @@
 .product-title {
   width: 100%;
   height: auto;
-
 }
 
 .product-title h1 {
@@ -41,7 +40,6 @@
   box-shadow:
     5px 5px 15px rgba(0, 123, 255, 0.2),
     -5px 5px 15px rgba(0, 123, 255, 0.2);
-  box-sizing: border-box;
 }
 
 .product-top {
@@ -58,16 +56,16 @@
 .product-bottom {
   width: 100%;
   display: flex;
-  justify-content: space-around; /* ORIGINAL HOLATDA */
-  align-items: center;
-  flex-wrap: wrap; /* Shart emas, lekin responsivega mos */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px; /* elementlar orasiga masofa */
 }
 
 .numbers {
-  width: 200px;
-  height: auto;
+  flex: 1 1 200px;
+  max-width: 200px;
   min-height: 150px;
-  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,17 +90,15 @@
 
 /* ======= RESPONSIVE ======= */
 
+/* 1024px dan kichik: 2 tadan yonma-yon */
 @media (max-width: 1024px) {
   .product-bottom {
-    flex-direction: column; /* TAGMA-TAG */
-    justify-content: center; /* EKRAN ORTASIDA */
-    align-items: center;
+    justify-content: center;
   }
 
   .numbers {
-    width: 100%;
-    max-width: 400px;
-    margin: 10px 0; /* Oralari kichik */
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 
   .numbers h2 {
@@ -114,6 +110,7 @@
   }
 }
 
+/* 768px dan kichik: umumiy container paddings */
 @media (max-width: 768px) {
   .product-container {
     padding: 15px 30px;
@@ -131,11 +128,25 @@
     font-size: 30px;
   }
 
+  .numbers {
+    flex: 1 1 45%; /* Shu yerda ham 2 ta yonma-yon */
+    max-width: 45%;
+  }
+
   .numbers h2 {
     font-size: 45px;
   }
 }
 
+/* 600px dan kichik: hammasi tagma-tag */
+@media (max-width: 600px) {
+  .numbers {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* 480px dan kichik: sarlavhalar kichiklashadi */
 @media (max-width: 480px) {
   .product-title h1 {
     font-size: 28px;

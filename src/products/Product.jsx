@@ -2,70 +2,72 @@ import React from 'react';
 import './product.css';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 
 const Product = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
-    triggerOnce: true, // faqat bir marta ishga tushadi
-    threshold: 0.3,    // 30% ko‘rinib qolganda ishga tushadi
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   return (
-    <div className='product-container'>
+    <div id="product" className='product-container'>
       <div className="product-title">
-        <h1>Курсы, которые у нас есть</h1>
+        <h1>{t('product.title')}</h1>
         <p>
-          НЕЙРОСОНОГРАФИЯ
-         <br />
-          ВЗРОСЛАЯ ЭХОКАРДИОГРАФИЯ
-         <br />
-          ДЕТСКАЯ ЭХОКАРДИОГРАФИЯ
-         <br />
-          АКУШЕРСТВО И ГИНЕКОЛОГИЯ
-         <br />
-          ФЕТАЛЬНАЯ ЭХОКАРДИОГРАФИЯ
+          {t('product.course1')}
+          <br />
+          {t('product.course2')}
+          <br />
+          {t('product.course3')}
+          <br />
+          {t('product.course4')}
+          <br />
+          {t('product.course5')}
         </p>
       </div>
 
       <div className="product-number" ref={ref}>
         <div className="product-top">
-          <h1>Biz raqamlardamiz</h1>
+          <h1>{t('product.numbersTitle')}</h1>
         </div>
         <div className="product-bottom">
           <div className="numbers">
             <h2>
               {inView && (
-                <CountUp start={0} end={4} duration={1} /> // 1 sekundda
+                <CountUp start={0} end={4} duration={1} />
               )}
               +
             </h2>
-            <p>Brendlar</p>
+            <p>{t('product.brands')}</p>
           </div>
           <div className="numbers">
             <h2>
               {inView && (
-                <CountUp start={0} end={10} duration={1.5} /> // 1.5 sekundda
+                <CountUp start={0} end={10} duration={1.5} />
               )}
               +
             </h2>
-            <p>Dilerlar</p>
+            <p>{t('product.dealers')}</p>
           </div>
           <div className="numbers">
             <h2>
               {inView && (
-                <CountUp start={0} end={60} duration={2} /> // 2 sekundda
+                <CountUp start={0} end={60} duration={2} />
               )}
               +
             </h2>
-            <p>Xodimlar</p>
+            <p>{t('product.employees')}</p>
           </div>
           <div className="numbers">
             <h2>
               {inView && (
-                <CountUp start={0} end={1000} duration={3} separator="," /> // 3 sekundda, vergul bilan
+                <CountUp start={0} end={1000} duration={3} separator="," />
               )}
               +
             </h2>
-            <p>Mijozlar</p>
+            <p>{t('product.clients')}</p>
           </div>
           <div className="numbers">
             <img width={180} src="https://www.assitech.uz/assets/raketa1-Ozrn9erW.png" alt="" />

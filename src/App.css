@@ -9,6 +9,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .header-container {
   max-width: 1536px;
   margin: 0 auto;
@@ -88,19 +93,6 @@ body {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
-.section-img {
-  width: 100%;
-  height: 550px;
-}
-
-.section-img img {
-  width: 100%;
-  height: 100%;
-  margin-top: 15px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
 .backdrop {
   position: fixed;
   top: 0; left: 0;
@@ -111,6 +103,45 @@ body {
 
 .header-links {
   /* z-index: 1003; */
+}
+
+/* ========== SECTION IMG ========== */
+
+.section-img {
+  width: 100%;
+  height: 550px;
+  margin-top: 15px;
+  border-radius: 20px;
+
+  background-image: url('/public/sectoin-pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive balandlik */
+@media (max-width: 1024px) {
+  .section-img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-img {
+    height: 200px;
+  }
 }
 
 /* ============ RESPONSIVE ============ */
@@ -150,7 +181,6 @@ body {
     position: absolute;
     top: 20px;
     right: 80px;
-
   }
 
   .hamburger {

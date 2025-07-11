@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { FaFacebookF, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
 import './navbar.css';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -28,7 +31,7 @@ const Navbar = () => {
     if (name.trim() && phone.trim() && message.trim()) {
       setFeedback({
         show: true,
-        message: "✅ Ma'lumotingiz muvaffaqiyatli yetkazildi!",
+        message: t('nav.successMessage'),
         type: 'success'
       });
       setFormData({ name: '', phone: '', message: '' });
@@ -36,7 +39,7 @@ const Navbar = () => {
     } else {
       setFeedback({
         show: true,
-        message: "❌ Iltimos, barcha maydonlarni to‘ldiring!",
+        message: t('nav.errorMessage'),
         type: 'error'
       });
     }
@@ -50,25 +53,29 @@ const Navbar = () => {
     <>
       <div className="navbar-container">
         <div className="navbar-content">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="/nav-img/instagram.png" alt="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
-                <img src="/nav-img/telegram.png" alt="telegram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="/nav-img/facebook.png" alt="facebook" />
-              </a>
-            </li>
-            <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
-          </ul>
-          <button className='btn-nav' onClick={() => setIsModalOpen(true)}>Aloqa</button>
+<ul>
+  <li>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <FaFacebookF size={20} />
+    </a>
+  </li>
+  <li>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <FaInstagram size={20} />
+    </a>
+  </li>
+  <li>
+    <a href="https://t.me/username" target="_blank" rel="noopener noreferrer">
+      <FaTelegramPlane size={20} />
+    </a>
+  </li>
+  <li>
+    <a href="tel:+998901234567">+998 90 123 45 67</a>
+  </li>
+</ul>
+     <button className='btn-nav' onClick={() => setIsModalOpen(true)}>
+            {t('nav.contactButton')}
+          </button>
         </div>
       </div>
 
@@ -77,34 +84,39 @@ const Navbar = () => {
           <div className="modal-backdrop" onClick={() => setIsModalOpen(false)}></div>
           <div className="modal">
             <form className='modal-form' onSubmit={handleSubmit}>
-              <h1 style={{ textAlign: 'center', color: '#2E3A6B', fontSize: '26px', marginBottom: '40px' }}>Bizga qanday savolingiz bor?</h1>
-              <label>Ism <span style={{ color: 'red' }}>*</span></label>
+              <h1 style={{ textAlign: 'center', color: '#2E3A6B', fontSize: '26px', marginBottom: '40px' }}>
+                {t('nav.modalTitle')}
+              </h1>
+
+              <label>{t('nav.labelName')} <span style={{ color: 'red' }}>*</span></label>
               <input
                 type="text"
                 name="name"
-                placeholder='Ismingizni kiriting'
+                placeholder={t('nav.placeholderName')}
                 value={formData.name}
                 onChange={handleChange}
               />
-              <label>Telefon raqami <span style={{ color: 'red' }}>*</span></label>
+
+              <label>{t('nav.labelPhone')} <span style={{ color: 'red' }}>*</span></label>
               <input
                 type="text"
                 name="phone"
-                placeholder='Telefon raqamingizni kiriting'
+                placeholder={t('nav.placeholderPhone')}
                 value={formData.phone}
                 onChange={handleChange}
               />
-              <label>Sizning habaringiz <span style={{ color: 'red' }}>*</span></label>
+
+              <label>{t('nav.labelMessage')} <span style={{ color: 'red' }}>*</span></label>
               <textarea
                 name="message"
-                placeholder='Sizning habaringiz'
+                placeholder={t('nav.placeholderMessage')}
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit">Yuborish</button>
+
+              <button type="submit">{t('nav.submitButton')}</button>
             </form>
           </div>
-          
         </>
       )}
 

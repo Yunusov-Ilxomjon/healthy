@@ -1,0 +1,76 @@
+{
+    "about": {
+        "title": "ASSI Tech",
+        "paragraph1": "Bizning ASSITECHBIO kompaniyamiz quyidagilarga ixtisoslashgan: ultratovush asboblarini sotish va xizmat ko'rsatish va ultratovush kurslarini tashkil etish.",
+        "paragraph2": "Biz turli ishlab chiqaruvchilar va narx toifalarining keng assortimentini taklif etamiz: mobil xizmatlar uchun ixcham portativ ultratovush apparatlaridan tortib, tibbiyot muassasalari uchun yuqori aniqlikdagi statsionar qurilmalargacha.",
+        "paragraph3": "Biz ishonchli yetkazib beruvchilar bilan ishlaymiz va mahsulot sifatini kafolatlaymiz, shuningdek, ultratovushli qurilmalar uchun kafolat va kafolatdan keyingi xizmatni taqdim etamiz.",
+        "paragraph4": "Mutaxassislarimiz tibbiy asbob-uskunalar sohasida katta tajribaga ega va har doim kerakli asbob-uskunalarni tanlash va o'rnatishda yordam berishga tayyor.",
+        "paragraph5": "Maqsadimiz mijozlarni eng yaxshi ultratovush apparatlari bilan ta'minlash, ularning ishini optimallashtirish va bemorlarni tashxislash va davolash samaradorligini oshirishga yordam berishdir.",
+        "paragraph6": "Biz mijozlarimiz bilan uzoq muddatli munosabatlarga intilamiz, ularga faqat eng yaxshi uskunalar va xizmatlarni taklif qilamiz."
+    },
+    "nav": {
+        "about": "Biz haqimizda",
+        "products": "Mahsulotlar",
+        "services": "Xizmatlar",
+        "contact": "Aloqa",
+        "installation": "O'rnatish",
+        "contactButton": "Aloqa",
+        "modalTitle": "Bizga qanday savolingiz bor?",
+        "labelName": "Ism",
+        "placeholderName": "Ismingizni kiriting",
+        "labelPhone": "Telefon raqami",
+        "placeholderPhone": "Telefon raqamingizni kiriting",
+        "labelMessage": "Sizning habaringiz",
+        "placeholderMessage": "Sizning habaringiz",
+        "submitButton": "Yuborish",
+        "successMessage": "✅ Ma'lumotingiz muvaffaqiyatli yetkazildi!",
+        "errorMessage": "❌ Iltimos, barcha maydonlarni to‘ldiring!"
+    },
+      "footer": {
+    "contactTitle": "Aloqa",
+    "companyAddressTitle": "Kompaniya manzili / Markaziy savdo ofisi:",
+    "companyAddress": "Toshkent, Olmazor Yunusobod, massiv 11 52B",
+    "phoneTitle": "Telefon",
+    "mailTitle": "Email:",
+    "workingHoursTitle": "Ish jadvali:",
+    "workingHours": "Dushanba - Juma: 9:00 - 18:00",
+    "socialTitle": "Biz ijtimoiy tarmoqlardamiz",
+    "mapTitle": "Bizning manzil",
+    "copyright": "© 2024 ASSI Tech. Barcha huquqlar himoyalangan."
+  },
+
+    "clients": {
+    "title": "Qo'llab-quvvatlaymiz",
+    "subtitle": "mijozni barcha bosqichlarda"
+  },
+
+  "product": {
+    "title": "BIZDA MAVJUD KURSLAR",
+    "course1": "NEYROSONOGRAFIYA",
+    "course2": "KATTALAR ECHOKARDIOGRAFIYASI",
+    "course3": "BOLALAR ECHOKARDIOGRAFIYASI",
+    "course4": "AKUSHERLIK VA GINEKOLOGIYA",
+    "course5": "FETAL ECHOKARDIOGRAFIYA",
+    "numbersTitle": "BIZ RAQAMLARDAMIZ",
+    "brands": "BRENDLAR",
+    "dealers": "DILERLAR",
+    "employees": "XODIMLAR",
+    "clients": "MIJOZLAR"
+  },
+    "registr": {
+    "contactInfo": "Aloqa ma’lumotlari",
+    "description": "Siz ushbu kontakt ma’lumotlari orqali batafsil ma’lumot olishingiz mumkin",
+    "address": "Massiv 11 52B, Yunusobod tumani, Toshkent, O‘zbekiston",
+    "email1": "sales@assitech.uz",
+    "email2": "ceo@assitech.uz",
+    "email3": "sevinch@assitech.uz",
+    "phone": "+998 99 815 98 85"
+  },
+
+    "servise": {
+    "deliver": "Yetkazib beramiz",
+    "directly_from_manufacturer": "tibbiy uskunalarni to'g'ridan-to'g'ri ishlab chiqaruvchidan",
+    "solve": "Hal qilamiz",
+    "complex_equipment_tasks": "kompleks tibbiy jihozlash va servis xizmatlari vazifalarini"
+  }
+}
