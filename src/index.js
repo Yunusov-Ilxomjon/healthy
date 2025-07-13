@@ -11,7 +11,7 @@ import Clients from './mijoz/Clients';
 import Servise from './servise/Servise';
 import Registr from './registr/Registr';
 import Footer from './footer/Footer';
-import Instal from './isntall/Instal';
+// import Instal from './isntall/Instal';
 
 function Layout() {
   return (
