@@ -70,7 +70,7 @@ const Product = () => {
             <p>{t('product.clients')}</p>
           </div>
           <div className="numbers">
-            <img width={180} src="https://www.assitech.uz/assets/raketa1-Ozrn9erW.png" alt="" />
+            <img width={180} src="./product-img/raketa.png" alt="" />
           </div>
         </div>
       </div>

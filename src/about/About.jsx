@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
- const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     AOS.init({ duration: 3000 });
@@ -26,7 +26,7 @@ const About = () => {
           <p>{t('about.paragraph6')}</p>
         </div>
         <div className="about-info-img">
-          <img src="/nav-logo.jpg" alt="Logo" />
+          <img width={400} src="/nav-logo.png" alt="Logo" />
         </div>
       </div>
     </div>

@@ -14,14 +14,14 @@ const Servise = () => {
         </h1>
         <img
           width={300}
-          src="https://www.assitech.uz/assets/aparat-DR1Mzz8Q.png"
+          src="./servise-img/aparat1.png"
           alt=""
         />
       </div>
       <div data-aos="fade-left" className="servise-info-2">
         <img
           width={300}
-          src="https://www.assitech.uz/assets/aparat1-Cy8L3mWs.png"
+          src="./servise-img/aparat2.png"
           alt=""
         />
         <h1>

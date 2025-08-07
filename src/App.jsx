@@ -24,7 +24,7 @@ function App() {
       <div className="header-nav">
         <div className="header-logo">
           <a href="/">
-            <img src="/nav-logo.jpg" alt="logo" />
+            <img width={200} src="/nav-logo.png" alt="logo" />
           </a>
         </div>
 

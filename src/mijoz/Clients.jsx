@@ -42,37 +42,37 @@ const Clients = () => {
         >
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services-COB4XtZd.jpg" alt="client1" />
+              <img src="./clients-img/1.jpg" alt="client1" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services2-K8QYSDe8.jpg" alt="client2" />
+              <img src="./clients-img/2.jpg" alt="client2" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services3-BSCkrwvh.jpg" alt="client3" />
+              <img src="./clients-img/3.jpg" alt="client3" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services4-D49m1GA5.jpg" alt="client4" />
+              <img src="./clients-img/4.jpg" alt="client4" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services4-D49m1GA5.jpg" alt="client5" />
+              <img src="./clients-img/5.jpg" alt="client5" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/servies6-Czu_XXJd.jpg" alt="client6" />
+              <img src="./clients-img/6.jpg" alt="client6" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a href="/">
-              <img src="https://www.assitech.uz/assets/services7-DO5HLDSf.jpg" alt="client7" />
+              <img src="./clients-img/7.jpg" alt="client7" />
             </a>
           </SwiperSlide>
         </Swiper>

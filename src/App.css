@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+html, body {
+  overflow-x: hidden; /* O‘ng tomondan scroll chiqmasin */
 }
 
 body {
